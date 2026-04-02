@@ -1,0 +1,314 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Header Start -->
+    <!-- Causes Hero Section Start -->
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+
+            <h1 class="text-white display-3 mb-4">Recent Causes</h1>
+
+            <p class="fs-5 text-white mb-4">
+                Support our latest environmental causes and be part of the change for a greener future.
+            </p>
+
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item">
+                    <a href="{% url 'home' %}" class="text-white">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="{% url 'causes' %}" class="text-white">Causes</a>
+                </li>
+            </ol>
+
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Causes Start -->
+    <!-- Causes Section Start -->
+    <div class="container-fluid causes py-5">
+        <div class="container py-5">
+
+            <!-- Section Title -->
+            <div class="text-center mx-auto pb-5" style="max-width: 800px;">
+                <h5 class="text-uppercase text-primary">Recent Causes</h5>
+                <h1 class="mb-4">The Environment Needs Our Protection</h1>
+                <p class="mb-0">
+                    Join our ongoing initiatives to protect nature, support communities, and build a sustainable future.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Cause 1 -->
+                <div class="col-lg-6 col-xl-3">
+                    <div class="causes-item shadow-sm rounded overflow-hidden">
+
+                        <img src="https://images.yourstory.com/cs/wordpress/2015/09/yourstory-tree-plantation.jpg?mode=crop&crop=faces&ar=2%3A1&format=auto&w=1920&q=75"
+                            class="img-fluid w-100 causes-img" alt="Tree Plantation">
+
+                        <div class="p-3 bg-dark text-white d-flex justify-content-between">
+                            <small>Goal: $3600</small>
+                            <small>Raised: $2400</small>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 65%;">65%</div>
+                        </div>
+
+                        <div class="p-4 text-center">
+                            <h5>Tree Plantation Drive</h5>
+                            <p>
+                                Help us plant trees and restore green spaces to fight climate change.
+                            </p>
+                            <a href="#" class="btn btn-primary px-3 py-2">Donate Now</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Cause 2 -->
+                <div class="col-lg-6 col-xl-3">
+                    <div class="causes-item shadow-sm rounded overflow-hidden">
+
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSshQhr-7sP5DnMy2iqc9aCMJQSwJFVrB0s-Q&s"
+                            class="img-fluid w-100 causes-img" alt="Education">
+
+                        <div class="p-3 bg-dark text-white d-flex justify-content-between">
+                            <small>Goal: $5000</small>
+                            <small>Raised: $3750</small>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 75%;">75%</div>
+                        </div>
+
+                        <div class="p-4 text-center">
+                            <h5>Environmental Education</h5>
+                            <p>
+                                Educating children and communities about sustainability and eco-friendly living.
+                            </p>
+                            <a href="#" class="btn btn-primary px-3 py-2">Donate Now</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Cause 3 -->
+                <div class="col-lg-6 col-xl-3">
+                    <div class="causes-item shadow-sm rounded overflow-hidden">
+
+                        <img src="https://sankeshfoundation.org/wp-content/uploads/2023/08/Sankesh-Global-Foundation-Impacting-India-Conserving-Water-1024x577.jpg"
+                            class="img-fluid w-100 causes-img" alt="Clean Water">
+
+                        <div class="p-3 bg-dark text-white d-flex justify-content-between">
+                            <small>Goal: $4000</small>
+                            <small>Raised: $3400</small>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 85%;">85%</div>
+                        </div>
+
+                        <div class="p-4 text-center">
+                            <h5>Clean Water Initiative</h5>
+                            <p>
+                                Providing clean and safe drinking water to rural communities.
+                            </p>
+                            <a href="#" class="btn btn-primary px-3 py-2">Donate Now</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Cause 4 -->
+                <div class="col-lg-6 col-xl-3">
+                    <div class="causes-item shadow-sm rounded overflow-hidden">
+
+                        <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2025/09/Wildlife-Conservation-Reasons-to-Save-Wildlife.jpg"
+                            class="img-fluid w-100 causes-img" alt="Wildlife">
+
+                        <div class="p-3 bg-dark text-white d-flex justify-content-between">
+                            <small>Goal: $6000</small>
+                            <small>Raised: $5700</small>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 95%;">95%</div>
+                        </div>
+
+                        <div class="p-4 text-center">
+                            <h5>Wildlife Protection</h5>
+                            <p>
+                                Protecting endangered species and preserving natural habitats.
+                            </p>
+                            <a href="#" class="btn btn-primary px-3 py-2">Donate Now</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Causes Section End -->
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark text-light py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+
+                <!-- Newsletter -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Newsletter</h4>
+                        <p class="mb-4">
+                            Stay updated with our latest news, events, and environmental initiatives.
+                        </p>
+
+                        <div class="position-relative">
+                            <input type="email" class="form-control bg-secondary border-0 w-100 py-3 ps-4 pe-5"
+                                placeholder="Enter your email">
+
+                            <button type="button" class="btn btn-primary position-absolute top-0 end-0 mt-2 me-2 px-3">
+                                Sign Up
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Our Services</h4>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Ocean Conservation</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Wildlife Protection</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Social Ecology</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Community Support</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Environmental Awareness</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Green Initiatives</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Volunteers -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Our Volunteers</h4>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Karen Dawson</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Jack Simmons</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Michael Linden</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Simon Green</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Natalie Channing</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Caroline Gerwig</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Gallery -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Gallery</h4>
+                        <div class="row g-2">
+
+                            <!-- Image -->
+                            <div class="col-4">
+                                <div class="footer-gallery position-relative">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT31yE6SWKS-BnLA_C-tC_51alvidWPXgXh9g&s"
+                                        class="img-fluid rounded" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="footer-gallery">
+                                    <img src="https://i.pinimg.com/originals/d3/45/11/d3451114ab4e1d55ead624930bcff60c.jpg"
+                                        class="img-fluid rounded" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="footer-gallery">
+                                    <img src="https://images.pexels.com/photos/1525039/pexels-photo-1525039.jpeg?cs=srgb&dl=pexels-francesco-ungaro-1525039.jpg&fm=jpg"
+                                        class="img-fluid rounded" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="footer-gallery">
+                                    <img src="https://images.pexels.com/photos/1525039/pexels-photo-1525039.jpeg?cs=srgb&dl=pexels-francesco-ungaro-1525039.jpg&fm=jpg"
+                                        class="img-fluid rounded" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="footer-gallery">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLTeqllH5Hto7ALMNb6UNq6GQ949dxJi2WYQ&s"
+                                        class="img-fluid rounded" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="footer-gallery">
+                                    <img src="https://www.jessleephotos.com/images/960/Hood-Sunrise1474.jpg"
+                                        class="img-fluid rounded" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-md-0">
+                    <span class="text-body"><a href="#"><i class="fas fa-copyright text-light me-2"></i>GOgreen</a>, All
+                        right reserved.</span>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="#" class="btn-hover-color btn-square text-white me-2"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn-hover-color btn-square text-white me-2"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn-hover-color btn-square text-white me-2"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn-hover-color btn-square text-white me-2"><i
+                                class="fab fa-pinterest"></i></a>
+                        <a href="#" class="btn-hover-color btn-square text-white me-0"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-md-end text-body">
+                    Designed By<a class=""> Adii</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i
+            class="fa fa-arrow-up"></i></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+
+    {% endblock content %}

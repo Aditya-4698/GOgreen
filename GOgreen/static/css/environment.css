@@ -1,0 +1,31 @@
+.hero-text {
+    text-align: center;
+}
+
+/* Small heading */
+.subtitle {
+    color: #a8ffdc;
+    letter-spacing: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Main heading */
+.title {
+    font-size: 70px;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+    margin-bottom: 25px;
+}
+
+/* Paragraph text */
+.description {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #e0e0e0;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 40px;
+}

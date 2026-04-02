@@ -1,0 +1,1005 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+    <div class="container-fluid p-0" style="margin-top:110px;">
+        <div id="carouselId" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img src="{% static 'img/carousel-1.jpg' %}" class="w-100 hero-img">
+
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="text-center hero-box">
+                            <h5 class="text-success mb-3">WE'LL SAVE OUR PLANET</h5>
+                            <h1 class="display-3 fw-bold text-white">Protect Environment</h1>
+                            <p class="text-light mb-4">
+                                Our planet is our home. Every small action counts toward saving the environment.
+                            </p>
+                            <a href="#" class="btn btn-success px-5 py-2">Join With Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img src="{% static 'img/carousel-2.jpg' %}" class="w-100 hero-img">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="text-center hero-box">
+                            <h5 class="text-success mb-3">SAVE NATURE</h5>
+                            <h1 class="display-3 fw-bold text-white">Protect Environment</h1>
+                            <p class="text-light mb-4">
+                                Reduce waste, conserve energy, and build a sustainable future.
+                            </p>
+                            <a href="#" class="btn btn-success px-5 py-2">Join With Us</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img src="{% static 'img/carousel-3.jpg' %}" class="w-100 hero-img">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="text-center hero-box">
+                            <h5 class="text-success mb-3">GREEN FUTURE</h5>
+                            <h1 class="display-3 fw-bold text-white">Protect Environment</h1>
+                            <p class="text-light mb-4">
+                                Plant trees, reduce pollution, and protect our only home.
+                            </p>
+                            <a href="#" class="btn btn-success px-5 py-2">Join With Us</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+    </div>
+    <div class="container-fluid about  py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-xl-5">
+                    <div class="h-100">
+                        <img src="{% static 'img/about-1.jpg' %}" class="img-fluid w-100 h-100" alt="Image">
+                    </div>
+                </div>
+                <div class="col-xl-7 about-section">
+
+                    <h5 class="section-subtitle">About Us</h5>
+                    <h1 class="section-title">Our Main Goal is to Protect the Environment</h1>
+
+                    <p class="section-text">
+                        We are dedicated to creating a sustainable future by promoting environmental awareness
+                        and encouraging responsible actions. Our mission is to reduce pollution, conserve natural
+                        resources, and inspire communities to adopt eco-friendly practices for a better tomorrow.
+                    </p>
+
+                    <div class="tab-class">
+                        <ul class="nav tab-nav mb-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-bs-toggle="pill" href="#tab-1">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="pill" href="#tab-2">Mission</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-bs-toggle="pill" href="#tab-3">Vision</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+
+                            <!-- About -->
+                            <div id="tab-1" class="tab-pane fade show active">
+                                <h5 class="tab-title">Who We Are</h5>
+                                <p>
+                                    We are a passionate organization working towards environmental protection
+                                    through education, awareness campaigns, and sustainable initiatives.
+                                </p>
+                                <a class="btn btn-success px-4 py-2" href="#">Read More</a>
+                            </div>
+
+                            <!-- Mission -->
+                            <div id="tab-2" class="tab-pane fade">
+                                <h5 class="tab-title">Our Mission</h5>
+                                <p>
+                                    Our mission is to protect nature by reducing environmental impact, promoting
+                                    green energy, and encouraging people to live sustainably.
+                                </p>
+                                <a class="btn btn-success px-4 py-2" href="#">Read More</a>
+                            </div>
+
+                            <!-- Vision -->
+                            <div id="tab-3" class="tab-pane fade">
+                                <h5 class="tab-title">Our Vision</h5>
+                                <p>
+                                    We envision a world where humans and nature coexist in harmony, ensuring a
+                                    cleaner and greener planet for future generations.
+                                </p>
+                                <a class="btn btn-success px-4 py-2" href="#">Read More</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid service py-5 bg-light">
+        <div class="container py-5 what-we-do">
+
+            <div class="text-center mx-auto pb-5" style="max-width: 800px;">
+                <h5 class="section-subtitle">What We Do</h5>
+                <h1 class="section-title">Our Actions to Protect the Environment</h1>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="service-card">
+                        <img src="{% static 'img/service-1.jpg' %}" class="img-fluid" alt="">
+                        <h4>Environmental Campaigns</h4>
+                        <p>We organize campaigns to raise awareness and funds for environmental protection initiatives.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="service-card">
+                        <img src="{% static 'img/service-2.jpg' %}" class="img-fluid" alt="">
+                        <h4>Community Engagement</h4>
+                        <p>We work closely with communities to promote sustainable and eco-friendly practices.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="service-card">
+                        <img src="{% static 'img/service-3.jpg' %}" class="img-fluid" alt="">
+                        <h4>Eco Tours & Education</h4>
+                        <p>We provide guided eco-tours to educate people about nature conservation.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="service-card">
+                        <img src="{% static 'img/service-4.jpg' %}" class="img-fluid" alt="">
+                        <h4>Wildlife Protection</h4>
+                        <p>We actively support the protection of wildlife and preservation of natural habitats.</p>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="col-12 text-center">
+                    <a class="btn btn-success px-5 py-2" href="#">Read More</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid donation py-5">
+        <div class="container py-5 donation-section">
+
+            <div class="text-center mx-auto pb-5" style="max-width: 800px;">
+                <h5 class="section-subtitle">Donation</h5>
+                <h1 class="section-title">Your Contribution Can Save Our Planet</h1>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-lg-4">
+                    <div class="donation-card">
+                        <img src="img/donation-1.jpg" class="img-fluid" alt="">
+                        <div class="donation-overlay">
+                            <h5>Organic Farming</h5>
+                            <h4>Support Sustainable Agriculture</h4>
+                            <p>Help farmers adopt eco-friendly methods that protect soil, water, and biodiversity.</p>
+                            <a class="btn btn-success px-4 py-2" href="#">Donate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4">
+                    <div class="donation-card">
+                        <img src="img/service-2.jpg" class="img-fluid" alt="">
+                        <div class="donation-overlay">
+                            <h5>Ecosystem</h5>
+                            <h4>Restore Natural Habitats</h4>
+                            <p>Your support helps us conserve forests, rivers, and ecosystems for future generations.
+                            </p>
+                            <a class="btn btn-success px-4 py-2" href="#">Donate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4">
+                    <div class="donation-card">
+                        <img src="img/donation-3.jpg" class="img-fluid" alt="">
+                        <div class="donation-overlay">
+                            <h5>Recycling</h5>
+                            <h4>Reduce Waste & Pollution</h4>
+                            <p>Support recycling programs that reduce landfill waste and protect the environment.</p>
+                            <a class="btn btn-success px-4 py-2" href="#">Donate</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="col-12 text-center">
+                    <a class="btn btn-success px-5 py-2" href="{% url 'donation' %}">View All Donations</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid counter py-5"
+        style="background: linear-gradient(rgba(220, 215, 215, 0.4), rgba(0, 0, 0, 0.4)), url(img/volunteers-bg.jpg) center center; background-size: cover;">
+        <div class="container py-5 achievements-section">
+
+            <div class="text-center mx-auto pb-5" style="max-width: 800px;">
+                <h5 class="section-subtitle">Achievements</h5>
+                <h1 class="section-title text-white">Our Impact So Far</h1>
+                <p class="section-text text-light">
+                    Over the years, we have made significant contributions toward protecting the environment
+                    through collective efforts, community support, and sustainable initiatives.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Item 1 -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="counter-card text-center">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Trees Planted</h3>
+                        <div class="counter">
+                            <span data-toggle="counter-up">3600</span>+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="counter-card text-center">
+                        <i class="fas fa-donate"></i>
+                        <h3>Funds Raised</h3>
+                        <div class="counter">
+                            ₹<span data-toggle="counter-up">150000</span>+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="counter-card text-center">
+                        <i class="fas fa-users"></i>
+                        <h3>Volunteers</h3>
+                        <div class="counter">
+                            <span data-toggle="counter-up">700</span>+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="counter-card text-center">
+                        <i class="fas fa-hand-holding-heart"></i>
+                        <h3>Campaign Days</h3>
+                        <div class="counter">
+                            <span data-toggle="counter-up">500</span>+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="col-12 text-center mt-4">
+                    <a class="btn btn-success px-5 py-2" href="#">Join With Us</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid causes py-5">
+        <div class="container py-5 causes-section">
+
+            <div class="text-center mx-auto pb-5" style="max-width: 800px;">
+                <h5 class="section-subtitle">Recent Causes</h5>
+                <h1 class="section-title">The Environment Needs Our Protection</h1>
+                <p class="section-text">
+                    We are actively working on various environmental causes to create a cleaner, greener,
+                    and more sustainable future. Your support can make a real difference.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Cause 1 -->
+                <div class="col-lg-6 col-xl-3">
+                    <div class="cause-card">
+                        <img src="{% static 'img/causes-1.jpg' %}" class="img-fluid" alt="">
+
+                        <div class="cause-body">
+                            <h4>Wildlife Protection</h4>
+                            <p>Protecting endangered species and preserving natural habitats.</p>
+
+                            <div class="progress mb-2">
+                                <div class="progress-bar" style="width: 95%;">95%</div>
+                            </div>
+
+                            <div class="d-flex justify-content-between small mb-3">
+                                <span>Goal: ₹70,000</span>
+                                <span>Raised: ₹66,500</span>
+                            </div>
+
+                            <a class="btn btn-success w-100" href="#">Donate Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cause 2 -->
+                <div class="col-lg-6 col-xl-3">
+                    <div class="cause-card">
+                        <img src="{% static 'img/causes-2.jpg' %}" class="img-fluid" alt="">
+
+                        <div class="cause-body">
+                            <h4>Clean Water Initiative</h4>
+                            <p>Providing clean and safe drinking water to rural communities.</p>
+
+                            <div class="progress mb-2">
+                                <div class="progress-bar" style="width: 75%;">75%</div>
+                            </div>
+
+                            <div class="d-flex justify-content-between small mb-3">
+                                <span>Goal: ₹80,000</span>
+                                <span>Raised: ₹60,000</span>
+                            </div>
+
+                            <a class="btn btn-success w-100" href="#">Donate Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cause 3 -->
+                <div class="col-lg-6 col-xl-3">
+                    <div class="cause-card">
+                        <img src="{% static 'img/causes-3.jpg' %}" class="img-fluid" alt="">
+
+                        <div class="cause-body">
+                            <h4>Waste Recycling Program</h4>
+                            <p>Reducing waste through recycling and promoting eco-friendly habits.</p>
+
+                            <div class="progress mb-2">
+                                <div class="progress-bar" style="width: 85%;">85%</div>
+                            </div>
+
+                            <div class="d-flex justify-content-between small mb-3">
+                                <span>Goal: ₹40,000</span>
+                                <span>Raised: ₹34,000</span>
+                            </div>
+
+                            <a class="btn btn-success w-100" href="#">Donate Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cause 4 -->
+                <div class="col-lg-6 col-xl-3">
+                    <div class="cause-card">
+                        <img src="{% static 'img/causes-1.jpg' %}" class="img-fluid" alt="">
+
+                        <div class="cause-body">
+                            <h4>Wildlife Protection</h4>
+                            <p>Protecting endangered species and preserving natural habitats.</p>
+
+                            <div class="progress mb-2">
+                                <div class="progress-bar" style="width: 95%;">95%</div>
+                            </div>
+
+                            <div class="d-flex justify-content-between small mb-3">
+                                <span>Goal: ₹70,000</span>
+                                <span>Raised: ₹66,500</span>
+                            </div>
+
+                            <a class="btn btn-success w-100" href="#">Donate Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid event py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 800px;">
+                <h5 class="text-uppercase text-primary">Upcoming Events</h5>
+                <h1 class="mb-0">Help today because tomorrow you may need help!</h1>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Event 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="event-card">
+                        <img src="https://t4.ftcdn.net/jpg/05/76/66/07/360_F_576660706_gLfToX4gJ72bS5fBN35gfeLDS6ncvjMw.jpg"
+                            class="img-fluid w-100" alt="">
+                        <div class="p-3">
+                            <small><i class="fas fa-map-marker-alt text-primary me-1"></i>Delhi</small><br>
+                            <small><i class="fas fa-calendar-alt text-primary me-1"></i>10 Feb 2023</small>
+
+                            <h5 class="mt-2">Cleaning Plan</h5>
+                            <p class="text-muted">Simple way to keep environment clean.</p>
+
+                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Copy same for 4 cards -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="event-card">
+                        <img src="https://t4.ftcdn.net/jpg/05/76/66/07/360_F_576660706_gLfToX4gJ72bS5fBN35gfeLDS6ncvjMw.jpg"
+                            class="img-fluid w-100" alt="">
+                        <div class="p-3">
+                            <small><i class="fas fa-map-marker-alt text-primary me-1"></i>Mumbai</small><br>
+                            <small><i class="fas fa-calendar-alt text-primary me-1"></i>10 Feb 2023</small>
+
+                            <h5 class="mt-2">Cleaning Plan</h5>
+                            <p class="text-muted">Simple way to keep environment clean.</p>
+
+                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="event-card">
+                        <img src="https://t4.ftcdn.net/jpg/05/76/66/07/360_F_576660706_gLfToX4gJ72bS5fBN35gfeLDS6ncvjMw.jpg"
+                            class="img-fluid w-100" alt="">
+                        <div class="p-3">
+                            <small><i class="fas fa-map-marker-alt text-primary me-1"></i>Patna</small><br>
+                            <small><i class="fas fa-calendar-alt text-primary me-1"></i>10 Feb 2023</small>
+
+                            <h5 class="mt-2">Cleaning Plan</h5>
+                            <p class="text-muted">Simple way to keep environment clean.</p>
+
+                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="event-card">
+                        <img src="https://t4.ftcdn.net/jpg/05/76/66/07/360_F_576660706_gLfToX4gJ72bS5fBN35gfeLDS6ncvjMw.jpg"
+                            class="img-fluid w-100" alt="">
+                        <div class="p-3">
+                            <small><i class="fas fa-map-marker-alt text-primary me-1"></i>Patna</small><br>
+                            <small><i class="fas fa-calendar-alt text-primary me-1"></i>10 Feb 2023</small>
+
+                            <h5 class="mt-2">Cleaning Plan</h5>
+                            <p class="text-muted">Simple way to keep environment clean.</p>
+
+                            <a href="#" class="btn btn-primary btn-sm">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid blog py-5 mb-5">
+        <!-- Latest News Start -->
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5" style="max-width: 800px;">
+                <h5 class="text-uppercase text-primary">Latest News</h5>
+                <h1 class="mb-0">
+                    Help today because tomorrow you may be the one who needs help!
+                </h1>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Blog Item -->
+                <div class="col-lg-6 col-xl-3">
+                    <div class="blog-item shadow-sm">
+
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img src="https://www.bria.com.ph/wp-content/uploads/2021/06/Environmental-Organizations-You-Can-Volunteer-For.jpg"
+                                class="img-fluid w-100" alt="Blog Image">
+
+                            <!-- Overlay Info -->
+                            <div class="blog-info d-flex justify-content-between text-white px-3 py-2">
+                                <span><i class="fa fa-clock me-1"></i> Dec 01, 2024</span>
+                                <span>3 <i class="fa fa-heart"></i></span>
+                            </div>
+
+                            <!-- Search Icon -->
+                            <div class="search-icon">
+                                <a href="img/blog-1.jpg" data-lightbox="blog">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="p-4 border">
+                            <h5 class="mb-3">Save The Tropical Forests</h5>
+                            <p class="mb-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <a href="#" class="btn btn-primary px-4 py-2 text-white">
+                                Read More
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6 col-xl-3">
+                    <div class="blog-item shadow-sm">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img src="https://www.bria.com.ph/wp-content/uploads/2021/06/Environmental-Organizations-You-Can-Volunteer-For.jpg"
+                                class="img-fluid w-100" alt="Blog Image">
+                            <div class="blog-info d-flex justify-content-between text-white px-3 py-2">
+                                <span><i class="fa fa-clock me-1"></i> Dec 01, 2024</span>
+                                <span>5 <i class="fa fa-heart"></i></span>
+                            </div>
+                            <div class="search-icon">
+                                <a href="img/blog-2.jpg" data-lightbox="blog">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-4 border">
+                            <h5 class="mb-3">Clean Water Initiative</h5>
+                            <p class="mb-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <a href="#" class="btn btn-primary px-4 py-2 text-white">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-xl-3">
+                    <div class="blog-item shadow-sm">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img src="https://www.bria.com.ph/wp-content/uploads/2021/06/Environmental-Organizations-You-Can-Volunteer-For.jpg"
+                                class="img-fluid w-100" alt="Blog Image">
+                            <div class="blog-info d-flex justify-content-between text-white px-3 py-2">
+                                <span><i class="fa fa-clock me-1"></i> Dec 01, 2024</span>
+                                <span>5 <i class="fa fa-heart"></i></span>
+                            </div>
+                            <div class="search-icon">
+                                <a href="img/blog-2.jpg" data-lightbox="blog">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-4 border">
+                            <h5 class="mb-3">Clean Water Initiative</h5>
+                            <p class="mb-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <a href="#" class="btn btn-primary px-4 py-2 text-white">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 col-xl-3">
+                    <div class="blog-item shadow-sm">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img src="https://www.bria.com.ph/wp-content/uploads/2021/06/Environmental-Organizations-You-Can-Volunteer-For.jpg"
+                                class="img-fluid w-100" alt="Blog Image">
+                            <div class="blog-info d-flex justify-content-between text-white px-3 py-2">
+                                <span><i class="fa fa-clock me-1"></i> Dec 01, 2024</span>
+                                <span>5 <i class="fa fa-heart"></i></span>
+                            </div>
+                            <div class="search-icon">
+                                <a href="img/blog-2.jpg" data-lightbox="blog">
+                                    <i class="fas fa-search-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="p-4 border">
+                            <h5 class="mb-3">Clean Water Initiative</h5>
+                            <p class="mb-3">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </p>
+                            <a href="#" class="btn btn-primary px-4 py-2 text-white">
+                                Read More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Latest News End -->
+    </div>
+    <!-- Gallery Start -->
+    <div class="container-fluid gallery py-5 px-0">
+
+        <!-- Section Title -->
+        <div class="text-center mx-auto pb-5" style="max-width: 800px;">
+
+            <h6 class="text-uppercase text-success fw-bold mb-2">Our Work</h6>
+
+            <h1 class="mb-3 fw-bold">
+                We Care About the Environment 🌱
+            </h1>
+
+            <p class="text-muted fs-5">
+                We are committed to protecting nature, promoting sustainability,
+                and creating a better future for the next generation.
+            </p>
+
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+                <div class="gallery-item">
+                    <img src="https://cmseducation.org/chowk-campus/wp-content/uploads/sites/7/2025/02/Caring-for-Environment-through-Environmental-Initiatives.webp"
+                        class="img-fluid w-100" alt="">
+                    <div class="overlay">
+                        <a href="img/gallery-1.jpg" data-lightbox="gallery">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                        <h5>Beauty Of Life</h5>
+                        <p>Gallery Name</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item mt-4">
+                    <img src="https://ecaofidaho.org/wp-content/uploads/2022/03/Environmental-Care.jpg"
+                        class="img-fluid w-100" alt="">
+                    <div class="overlay">
+                        <a href="img/gallery-2.jpg" data-lightbox="gallery">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                        <h5>Nature Love</h5>
+                        <p>Gallery Name</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 ">
+                <div class="gallery-item">
+                    <img src="https://www.sjddow.catholic.edu.au/assets/Uploads/photos/environment.jpg"
+                        class="img-fluid w-100" alt="">
+                    <div class="overlay">
+                        <a href="img/gallery-3.jpg" data-lightbox="gallery">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                        <h5>Green World</h5>
+                        <p>Gallery Name</p>
+                    </div>
+                </div>
+                <div class="gallery-item mt-4">
+                    <img src="https://www.sjddow.catholic.edu.au/assets/Uploads/photos/environment.jpg"
+                        class="img-fluid w-100" alt="">
+                    <div class="overlay">
+                        <a href="img/gallery-3.jpg" data-lightbox="gallery">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                        <h5>Green World</h5>
+                        <p>Gallery Name</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="gallery-item">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQkgEyXVU8aPsYfcZaWXax-8c5cjhtbfEI5A&s"
+                        class="img-fluid w-100" alt="">
+                    <div class="overlay">
+                        <a href="img/gallery-4.jpg" data-lightbox="gallery">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                        <h5>Clean Earth</h5>
+                        <p>Gallery Name</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item mt-4">
+                    <img src="https://my.pblworks.org/sites/default/files/project-snapshots/images/43_Taking_Care_or_Our_Environment_1280x720.jpg"
+                        class="img-fluid w-100" alt="">
+                    <div class="overlay">
+                        <a href="https://wellwo.net/wp-content/uploads/2023/02/cuidar-el-medioambiente.jpg"
+                            data-lightbox="gallery">
+                            <i class="fas fa-search-plus"></i>
+                        </a>
+                        <h5>Save Nature</h5>
+                        <p>Gallery Name</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Gallery End -->
+
+
+    <!-- Volunteer Start -->
+    <div class="container-fluid volunteer py-5 mt-5 bg-light">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+
+                <!-- Left Images -->
+                <div class="col-lg-5">
+                    <div class="row g-4">
+
+                        <div class="col-6">
+                            <div class="volunteer-img position-relative overflow-hidden rounded shadow-sm">
+                                <img src="https://img.freepik.com/free-photo/volunteers-little-kid-planting-tree-covering-hole-ground_482257-91057.jpg?semt=ais_incoming&w=740&q=80"
+                                    class="img-fluid w-100" alt="">
+                                <div class="volunteer-title">
+                                    <h6 class="mb-0">Michel Brown</h6>
+                                    <small>Communicator</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="volunteer-img position-relative overflow-hidden rounded shadow-sm">
+                                <img src="https://img.freepik.com/free-photo/volunteers-little-kid-planting-tree-covering-hole-ground_482257-91057.jpg?semt=ais_incoming&w=740&q=80"
+                                    class="img-fluid w-100" alt="">
+                                <div class="volunteer-title">
+                                    <h6 class="mb-0">John Smith</h6>
+                                    <small>Organizer</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="volunteer-img position-relative overflow-hidden rounded shadow-sm">
+                                <img src="https://www.ronitbaras.com/wp-content/uploads/2008/06/save-the-planet.jpg"
+                                    class="img-fluid w-100" alt="">
+                                <div class="volunteer-title">
+                                    <h6 class="mb-0">Sarah Lee</h6>
+                                    <small>Volunteer</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <div class="volunteer-img position-relative overflow-hidden rounded shadow-sm">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRqv1Ch4vm3VPGkBYag5BHSUY4MO8XGP-6Og&s"
+                                    class="img-fluid w-100" alt="">
+                                <div class="volunteer-title">
+                                    <h6 class="mb-0">David Clark</h6>
+                                    <small>Coordinator</small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right Content -->
+                <div class="col-lg-7">
+                    <h5 class="text-uppercase text-primary">Become a Volunteer</h5>
+                    <h2 class="mb-4 fw-bold">
+                        Join hands with us for a better life and a brighter future
+                    </h2>
+
+                    <p class="mb-4 text-muted">
+                        Be a part of our mission to protect the environment and support communities.
+                        Your contribution can make a real difference.
+                    </p>
+
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2"><i class="fa fa-check text-primary me-2"></i> Friendly and supportive
+                            environment</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-2"></i> Free training and guidance</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-2"></i> Opportunity to help nature and
+                            people</li>
+                        <li class="mb-2"><i class="fa fa-check text-primary me-2"></i> No prior experience required</li>
+                        <li><i class="fa fa-check text-primary me-2"></i> Completely free to join</li>
+                    </ul>
+
+                    <a href="#" class="btn btn-primary px-4 py-2 vjoin-btn">
+                        Join With Us
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Volunteer End -->
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark text-light py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+
+                <!-- Newsletter -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Newsletter</h4>
+                        <p class="mb-4">
+                            Stay updated with our latest news, events, and environmental initiatives.
+                        </p>
+
+                        <div class="position-relative">
+                            <input type="email" class="form-control bg-secondary border-0 w-100 py-3 ps-4 pe-5"
+                                placeholder="Enter your email">
+
+                            <button type="button" class="btn btn-primary position-absolute top-0 end-0 mt-2 me-2 px-3">
+                                Sign Up
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Our Services</h4>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Ocean Conservation</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Wildlife Protection</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Social Ecology</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Community Support</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Environmental Awareness</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Green Initiatives</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Volunteers -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Our Volunteers</h4>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Karen Dawson</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Jack Simmons</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Michael Linden</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Simon Green</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Natalie Channing</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Caroline Gerwig</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Gallery -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Gallery</h4>
+                        <div class="row g-2">
+
+                            <!-- Image -->
+                            <div class="col-4">
+                                <div class="footer-gallery position-relative">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT31yE6SWKS-BnLA_C-tC_51alvidWPXgXh9g&s"
+                                        class="img-fluid rounded" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="footer-gallery">
+                                    <img src="https://i.pinimg.com/originals/d3/45/11/d3451114ab4e1d55ead624930bcff60c.jpg"
+                                        class="img-fluid rounded" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="footer-gallery">
+                                    <img src="https://images.pexels.com/photos/1525039/pexels-photo-1525039.jpeg?cs=srgb&dl=pexels-francesco-ungaro-1525039.jpg&fm=jpg"
+                                        class="img-fluid rounded" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="footer-gallery">
+                                    <img src="https://images.pexels.com/photos/1525039/pexels-photo-1525039.jpeg?cs=srgb&dl=pexels-francesco-ungaro-1525039.jpg&fm=jpg"
+                                        class="img-fluid rounded" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="footer-gallery">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLTeqllH5Hto7ALMNb6UNq6GQ949dxJi2WYQ&s"
+                                        class="img-fluid rounded" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="footer-gallery">
+                                    <img src="https://www.jessleephotos.com/images/960/Hood-Sunrise1474.jpg"
+                                        class="img-fluid rounded" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <!-- Footer Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-md-0">
+                    <span class="text-body"><a href="#"><i class="fas fa-copyright text-light me-2"></i>GOgreen</a>, All
+                        right reserved.</span>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="#" class="btn-hover-color btn-square text-white me-2"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn-hover-color btn-square text-white me-2"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn-hover-color btn-square text-white me-2"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn-hover-color btn-square text-white me-2"><i
+                                class="fab fa-pinterest"></i></a>
+                        <a href="#" class="btn-hover-color btn-square text-white me-0"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-md-end text-body">
+                    Designed By<a class=""> Adii</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Copyright End -->
+    <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i
+            class="fa fa-arrow-up"></i></a>
+
+    <script>
+        $(document).ready(function () {
+            $('.event-carousel').owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                responsive: {
+                    0: { items: 1 },
+                    768: { items: 2 },
+                    992: { items: 3 }
+                }
+            });
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+
+{% endblock content %}

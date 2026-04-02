@@ -1,0 +1,263 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+
+            <h1 class="text-white display-3 mb-4">Donate for a Greener Future</h1>
+
+            <p class="fs-5 text-white mb-4">
+                Your small contribution can create a big impact. Support our mission to protect the environment and
+                build a sustainable future.
+            </p>
+
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item">
+                    <a href="{% url 'home' %}" class="text-white">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="{% url 'donation' %}" class="text-white">Donation</a>
+                </li>
+            </ol>
+
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Donation Start -->
+    <div class="container-fluid donation py-5 bg-light">
+        <div class="container py-5">
+
+            <!-- Section Title -->
+            <div class="text-center mx-auto pb-5" style="max-width: 800px;">
+                <h5 class="text-uppercase text-success">Donation</h5>
+                <h1 class="mb-3">Support Our Mission to Save the Planet</h1>
+                <p>
+                    Your contribution helps us protect nature, support communities, and build a sustainable future for
+                    generations to come.
+                </p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- Donation 1 -->
+                <div class="col-lg-4">
+                    <div class="donation-item rounded overflow-hidden shadow-sm bg-white">
+                        <!-- <img src="img/donation-1.jpg" class="img-fluid w-100" alt="Tree Plantation"> -->
+
+                        <div class="p-4 text-center">
+                            <h5 class="text-success fw-bold mb-2">Tree Plantation</h5>
+                            <h4 class="mb-3 text-dark">Grow a Greener Future</h4>
+                            <p class="text-muted">
+                                Help us plant trees and restore green cover to fight climate change and improve air
+                                quality.
+                            </p>
+                            <a class="btn btn-success px-4 py-2 mt-2" href="#">Donate Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Donation 2 -->
+                <div class="col-lg-4">
+                    <div class="donation-item rounded overflow-hidden shadow-sm bg-white">
+                        <!-- <img src="img/service-2.jpg" class="img-fluid w-100" alt="Ecosystem"> -->
+
+                        <div class="p-4 text-center">
+                            <h5 class="text-success fw-bold mb-2">Ecosystem Protection</h5>
+                            <h4 class="mb-3 text-dark">Preserve Natural Balance</h4>
+                            <p class="text-muted">
+                                Support projects that protect forests, rivers, and wildlife habitats across the country.
+                            </p>
+                            <a class="btn btn-success px-4 py-2 mt-2" href="#">Donate Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Donation 3 -->
+                <div class="col-lg-4">
+                    <div class="donation-item rounded overflow-hidden shadow-sm bg-white">
+                        <!-- <img src="img/donation-3.jpg" class="img-fluid w-100" alt="Recycling"> -->
+
+                        <div class="p-4 text-center">
+                            <h5 class="text-success fw-bold mb-2">Recycling Initiatives</h5>
+                            <h4 class="mb-3 text-dark">Reduce Waste, Save Earth</h4>
+                            <p class="text-muted">
+                                Help us promote recycling programs and reduce plastic waste in our communities.
+                            </p>
+                            <a class="btn btn-success px-4 py-2 mt-2" href="#">Donate Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <div class="col-12 text-center mt-4">
+                    <a class="btn btn-success px-4 py-2" href="#">View All Campaigns</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Donation End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer bg-dark text-light py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+
+                <!-- Newsletter -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Newsletter</h4>
+                        <p class="mb-4">
+                            Stay updated with our latest news, events, and environmental initiatives.
+                        </p>
+
+                        <div class="position-relative">
+                            <input type="email" class="form-control bg-secondary border-0 w-100 py-3 ps-4 pe-5"
+                                placeholder="Enter your email">
+
+                            <button type="button" class="btn btn-primary position-absolute top-0 end-0 mt-2 me-2 px-3">
+                                Sign Up
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Our Services</h4>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Ocean Conservation</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Wildlife Protection</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Social Ecology</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Community Support</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Environmental Awareness</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Green Initiatives</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Volunteers -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Our Volunteers</h4>
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Karen Dawson</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Jack Simmons</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Michael Linden</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Simon Green</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Natalie Channing</a></li>
+                            <li><a href="#"><i class="fas fa-angle-right me-2"></i> Caroline Gerwig</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Gallery -->
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Gallery</h4>
+                        <div class="row g-2">
+
+                            <!-- Image -->
+                            <div class="col-4">
+                                <div class="footer-gallery position-relative">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT31yE6SWKS-BnLA_C-tC_51alvidWPXgXh9g&s"
+                                        class="img-fluid rounded" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="footer-gallery">
+                                    <img src="https://i.pinimg.com/originals/d3/45/11/d3451114ab4e1d55ead624930bcff60c.jpg"
+                                        class="img-fluid rounded" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="footer-gallery">
+                                    <img src="https://images.pexels.com/photos/1525039/pexels-photo-1525039.jpeg?cs=srgb&dl=pexels-francesco-ungaro-1525039.jpg&fm=jpg"
+                                        class="img-fluid rounded" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="footer-gallery">
+                                    <img src="https://images.pexels.com/photos/1525039/pexels-photo-1525039.jpeg?cs=srgb&dl=pexels-francesco-ungaro-1525039.jpg&fm=jpg"
+                                        class="img-fluid rounded" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="footer-gallery">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLTeqllH5Hto7ALMNb6UNq6GQ949dxJi2WYQ&s"
+                                        class="img-fluid rounded" alt="">
+                                </div>
+                            </div>
+
+                            <div class="col-4">
+                                <div class="footer-gallery">
+                                    <img src="https://www.jessleephotos.com/images/960/Hood-Sunrise1474.jpg"
+                                        class="img-fluid rounded" alt="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-4 text-center text-md-start mb-md-0">
+                    <span class="text-body"><a href="#"><i class="fas fa-copyright text-light me-2"></i>GOgreen</a>, All
+                        right reserved.</span>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <a href="#" class="btn-hover-color btn-square text-white me-2"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn-hover-color btn-square text-white me-2"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn-hover-color btn-square text-white me-2"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn-hover-color btn-square text-white me-2"><i
+                                class="fab fa-pinterest"></i></a>
+                        <a href="#" class="btn-hover-color btn-square text-white me-0"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center text-md-end text-body">
+                    Designed By<a class=""> Adii</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i
+            class="fa fa-arrow-up"></i></a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+    <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+    <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+    <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'lib/lightbox/js/lightbox.min.js' %}"></script>
+
+{% endblock content %}
