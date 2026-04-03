@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Environs - Environmental & Nature Website Template</title>
+    <title>GOgreen</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="" name="keywords">
     <meta content="" name="description">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,64 +32,134 @@
 
 
     <!-- Navbar start -->
+    <!-- Navbar Wrapper -->
     <div class="container-fluid fixed-top shadow-sm">
 
         <!-- Topbar -->
-        <div class="topbar py-2 d-none d-md-block" style="background:#1d4712;">
+        <div class="topbar1 py-2 d-none d-md-block text-white"
+            style="background: linear-gradient(90deg,#1d4712,#2e7d32); font-size:14px;">
             <div class="container d-flex justify-content-between">
                 <div>
-                    <a href="#" class="text-white me-3 small">
+                    <span class="me-3">
                         <i class="fas fa-envelope me-1"></i> adiii@gmail.com
-                    </a>
-                    <a href="#" class="text-white small">
+                    </span>
+                    <span>
                         <i class="fas fa-phone-alt me-1"></i> +91 9192939495
-                    </a>
+                    </span>
                 </div>
 
                 <div>
-                    <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-white me-3 top-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white me-3 top-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3 top-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white top-icon"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
             <div class="container">
-                <a href="#" class="navbar-brand fw-bold text-success fs-3">
-                    GOgreen
+
+                <!-- Logo -->
+                <a href="#" class="navbar-brand fw-bold fs-3 text-success">
+                    🌱 GOgreen
                 </a>
 
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navBar">
+                <!-- Toggle -->
+                <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#navBar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <!-- Menu -->
                 <div class="collapse navbar-collapse" id="navBar">
                     <ul class="navbar-nav ms-auto align-items-lg-center">
-                        <li class="nav-item"><a class="nav-link active" href="{% url 'home' %}">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'about' %}">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'service' %}">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'causes' %}">Causes</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'events' %}">Events</a></li>
 
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{% url 'home' %}">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/about/' %}active{% endif %}"
+                                href="{% url 'about' %}">
+                                About
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/service/' %}active{% endif %}"
+                                href="{% url 'service' %}">
+                                Services
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/causes/' %}active{% endif %}"
+                                href="{% url 'causes' %}">
+                                Causes
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/events/' %}active{% endif %}"
+                                href="{% url 'events' %}">Events</a>
+                        </li>
+
+                        <!-- Dropdown -->
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="{% url 'blog' %}">Blog</a></li>
-                                <li><a class="dropdown-item" href="{% url 'gallery' %}">Gallery</a></li>
-                                <li><a class="dropdown-item" href="{% url 'volunteer' %}">Volunteers</a></li>
-                                <li><a class="dropdown-item" href="{% url 'donation' %}">Donation</a></li>
+                            <a class="nav-link dropdown-toggle 
+        {% if request.resolver_match.url_name in 'blog gallery volunteer donation' %}active{% endif %}"
+                                data-bs-toggle="dropdown">
+                                Pages
+                            </a>
+
+                            <ul class="dropdown-menu shadow border-0">
+
+                                <li>
+                                    <a class="dropdown-item {% if request.resolver_match.url_name == 'blog' %}active{% endif %}"
+                                        href="{% url 'blog' %}">
+                                        Blog
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item {% if request.resolver_match.url_name == 'gallery' %}active{% endif %}"
+                                        href="{% url 'gallery' %}">
+                                        Gallery
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item {% if request.resolver_match.url_name == 'volunteer' %}active{% endif %}"
+                                        href="{% url 'volunteer' %}">
+                                        Volunteers
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item {% if request.resolver_match.url_name == 'donation' %}active{% endif %}"
+                                        href="{% url 'donation' %}">
+                                        Donation
+                                    </a>
+                                </li>
+
                             </ul>
                         </li>
 
-                        <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
-
-                        <!-- Button -->
-                        <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-                            <a href="{% url 'donation' %}" class="btn btn-success px-4">Donate</a>
+                        <li class="nav-item">
+                            <a class="nav-link {% if request.path == '/contact/' %}active{% endif %}"
+                                href="{% url 'contact' %}">Contact</a>
                         </li>
+
+                        <!-- Donate Button -->
+                        <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
+                            <a href="{% url 'donation' %}" class="btn donate-btn px-4 py-2">
+                                ❤️ Donate
+                            </a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
